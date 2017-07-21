@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/arrow_location"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="341dp"
+            android:layout_height="48dp"
+            android:text="开启范围监听"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:background="@drawable/button_bg"
+            />
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:id="@+id/ll_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_close_nomal_bg"
+                android:orientation="vertical"
+                >
+                <com.wilddog.testlocation.view.DrawableCenterButton
+                    android:id="@+id/btn_device"
+                    android:layout_width="341dp"
+                    android:layout_height="48dp"
+                    android:text="附近列表设备"
+                    android:drawablePadding="3dp"
+                    android:textColor="#333"
+                    android:textSize="17sp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/arrows"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_device"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#cecece"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp">
+                        <ListView
+                            android:id="@+id/lv_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="135dp"
+                            android:divider="@android:color/transparent"
+                            >
+
+                        </ListView>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginBottom="-2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/button_view_circle_bg"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_marginTop="3dp"
+                android:layout_width="341dp"
+                android:layout_height="48dp"
+                android:textSize="17sp"
+                android:text="关闭范围监听"
+                android:textColor="#e6501e"
+                android:background="@drawable/button_close_bg"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

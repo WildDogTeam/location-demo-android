@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingRight="12dp"
+    android:background="#e6501e">
+    <LinearLayout
+        android:id="@+id/btn_title_back"
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:src="@mipmap/arrow_left"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/iv_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置同步"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/tv_hint_title" />
+
+    <TextView
+        android:id="@+id/tv_hint_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/hint_bg"
+        />
+</RelativeLayout>
+

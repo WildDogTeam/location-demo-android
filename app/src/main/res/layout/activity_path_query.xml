@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wilddog.testlocation.PathQueryActivity">
+    <include layout="@layout/head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.amap.api.maps2d.MapView
+
+        android:id="@+id/map"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:background="@drawable/textview_time_bg"
+        android:visibility="gone"
+        />
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/arrow_location"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_time"
+            android:layout_margin="5dp"
+            />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="341dp"
+            android:layout_height="48dp"
+            android:text="开启轨迹上传"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:background="@drawable/button_bg"
+            />
+        <Button
+            android:id="@+id/btn_stop"
+            android:visibility="gone"
+            android:layout_width="341dp"
+            android:layout_height="48dp"
+            android:text="关闭轨迹上传"
+            android:textColor="#e6501e"
+            android:background="@drawable/button_close_bg"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

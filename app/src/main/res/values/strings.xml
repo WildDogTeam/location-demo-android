@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestLocation</string>
+    <string name="path_title">轨迹上传</string>
+    <string name="location_title">位置同步</string>
+    <string name="hint_title2">开启成功</string>
+    <string name="dialog_content_location">你可以在[野狗-控制面板-数据预览] 中看到位置数据的更新</string>
+    <string name="near_up">最近上传</string>
+    <string name="circle_title">范围监听</string>
+    <string name="coming_soon">敬请期待</string>
+    <string name="content_dev">地理围栏功能正在开发中</string>
+    <string name="content_app">AppID不存在\n请输入正确的AppID</string>
+    <string name="path_dialog_title">开启成功</string>
+    <string name="path_contents_dialog">你可以在[野狗-控制面板-数据预览] 中看到轨迹数据的更新</string>
+    <string name="app_contents_dialgo">AppID是野狗应用的唯一标识\n 请前往野狗控制面板获取</string>
+</resources>
