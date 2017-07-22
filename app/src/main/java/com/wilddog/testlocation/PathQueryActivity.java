@@ -37,9 +37,7 @@ import com.wilddog.testlocation.view.HintDialog;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * AMapV1地图中简单介绍显示定位小蓝点
- */
+
 public class PathQueryActivity extends AppCompatActivity implements View.OnClickListener, LocationSource, AMapLocationListener {
     private static final String TAG = LocationActivy.class.getSimpleName();
     private AMap aMap;
